@@ -32,6 +32,18 @@ body, html {
     padding-top: 20px;
 }
 
+.form .copy-to-clipboard {
+    cursor: pointer;
+}
+
+.form .password-block {
+    margin-bottom: 10px;
+}
+
+.form .password-block input {
+    margin-bottom: 0 !important;
+}
+
 .form input[type="text"],
 .form input[type="range"], .form button {
     width: 80%;
@@ -66,11 +78,23 @@ body, html {
     box-shadow: 1px 1px 7px #222;
 }
 
+.form button.exit {
+    opacity: 0.4;
+    background-color: black;
+}
+
 /* Switch for checkbox */
-.checkboxBlock {
+.checkbox-block {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.checkbox-block div {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 10px;
 }
 
@@ -112,11 +136,11 @@ input[type='checkbox']:checked:after {
 }
 
 /* Range */
-.rangeLegend {
+.range-legend {
     text-align: center;
 }
 
-.rangeValue {
+.range-value {
     font-weight: bold;
 }
 

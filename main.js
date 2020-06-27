@@ -2,9 +2,9 @@ const {app, BrowserWindow} = require('electron');
 
 app.whenReady().then(() => {
     // create window
-    let win = new BrowserWindow({
+    let browserWindow = new BrowserWindow({
         width: 300,
-        height: 450,
+        height: 440,
         center: true,
         resizable: false,
         frame: false,
@@ -14,6 +14,6 @@ app.whenReady().then(() => {
         }
     });
 
-    win.removeMenu();
-    win.loadFile('src/index.html');
+    browserWindow.removeMenu();
+    browserWindow.loadFile('src/index.html');
 });

@@ -18,31 +18,35 @@
 
     <div class="form">
 
-        <input type="text" id="password" placeholder="Generated Password"/>
+        <div class="password-block">
+            <input type="text" id="password" placeholder="Generated Password"/>
+            <span id="clipboardButton" class="copy-to-clipboard" title="Copy to clipboard">&#128190;</span>
+        </div>
 
-        <div class="rangeLegend">
-            Length: <span id="lengthValue" class="rangeValue">12</span>
+        <div class="range-legend">
+            Length: <span id="lengthValue" class="range-value">12</span>
         </div>
         <input type="range" id="length" min="3" max="20" step="1" value="12"/>
 
-        <div>
-            <div class="checkboxBlock">
+        <div class="checkbox-block">
+            <div>
                 <label for="useLetters">Use Letters (A-Za-z)</label>
                 <input type="checkbox" id="useLetters" class="toggle" checked/>
             </div>
 
-            <div class="checkboxBlock">
+            <div>
                 <label for="useDigits">Use Digits (0-9)</label>
                 <input type="checkbox" id="useDigits" class="toggle" checked/>
             </div>
 
-            <div class="checkboxBlock">
+            <div>
                 <label for="useSymbols">Use Symbols (+-_!)</label>
                 <input type="checkbox" id="useSymbols" class="toggle"/>
             </div>
         </div>
 
         <button id="submit" type="button">Generate!</button>
+        <button id="exit" type="button" class="exit">Exit!</button>
 
     </div>
 </form>
