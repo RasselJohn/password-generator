@@ -1,0 +1,143 @@
+/* Main */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    display: grid;
+    background-image: url("images/background.png"); /* Background pattern from Toptal Subtle Patterns */
+    font-family: Arial, Sans-Serif;
+}
+
+/* Form */
+.login-wrap {
+    margin: auto;
+    width: 300px;
+    box-shadow: 4px 4px 10px #333;
+    padding: 15px;
+}
+
+.login-wrap h4 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 22px;
+    margin-top: 12px;
+    color: #41586f;
+}
+
+.form {
+    padding-top: 20px;
+}
+
+.form input[type="text"],
+.form input[type="range"], .form button {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form input[type="text"]:focus {
+    border: 1px solid #3498db;
+}
+
+.form button {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+}
+
+.form button:hover {
+    box-shadow: 1px 1px 5px #555;
+}
+
+.form button:active {
+    box-shadow: 1px 1px 7px #222;
+}
+
+/* Switch for checkbox */
+.checkboxBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 55px;
+    height: 28px;
+    background-color: #c3c4c7;
+    position: relative;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+input[type='checkbox']:focus,
+input[type='checkbox']:active {
+    outline: none;
+}
+
+input[type='checkbox']:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type='checkbox']:checked {
+    box-shadow: inset 0 0 0 15px #158EC6;
+}
+
+input[type='checkbox']:checked:after {
+    left: 30px;
+    background-color: #fff;
+}
+
+/* Range */
+.rangeLegend {
+    text-align: center;
+}
+
+.rangeValue {
+    font-weight: bold;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #81b5d8;
+    height: 5px !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #e74c3c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: white;
+    border: 1px solid #e74c3c;
+}
+

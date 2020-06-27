@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Password Generator v1.0</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+
+<body>
+
+<form class="login-wrap">
+
+    <h4>Password Generator v1.0</h4>
+
+    <div class="form">
+
+        <input type="text" id="password" placeholder="Generated Password"/>
+
+        <div class="rangeLegend">
+            Length: <span id="lengthValue" class="rangeValue">12</span>
+        </div>
+        <input type="range" id="length" min="3" max="20" step="1" value="12"/>
+
+        <div>
+            <div class="checkboxBlock">
+                <label for="useLetters">Use Letters (A-Za-z)</label>
+                <input type="checkbox" id="useLetters" class="toggle" checked/>
+            </div>
+
+            <div class="checkboxBlock">
+                <label for="useDigits">Use Digits (0-9)</label>
+                <input type="checkbox" id="useDigits" class="toggle" checked/>
+            </div>
+
+            <div class="checkboxBlock">
+                <label for="useSymbols">Use Symbols (+-_!)</label>
+                <input type="checkbox" id="useSymbols" class="toggle"/>
+            </div>
+        </div>
+
+        <button id="submit" type="button">Generate!</button>
+
+    </div>
+</form>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>
