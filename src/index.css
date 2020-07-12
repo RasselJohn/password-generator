@@ -34,14 +34,19 @@ body, html {
 
 .form .copy-to-clipboard {
     cursor: pointer;
+    width: 8%;
+    height: 8%;
 }
 
 .form .password-block {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
 }
 
 .form .password-block input {
-    margin-bottom: 0 !important;
+    margin-bottom: auto !important;
 }
 
 .form input[type="text"],

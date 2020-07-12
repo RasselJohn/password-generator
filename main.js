@@ -4,7 +4,7 @@ app.whenReady().then(() => {
     // create window
     let browserWindow = new BrowserWindow({
         width: 300,
-        height: 440,
+        height: 455,
         center: true,
         resizable: false,
         frame: false,
